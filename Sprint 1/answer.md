@@ -3,4 +3,23 @@ TODO: Student to complete code and comments in the sections below.
 
 ## Install Kubernetes node 1
 
-- Customized kubeadm-config.yaml: 
+- Customized kubeadm-config.yaml:
+
+- apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURCVENDQWUyZ0F3SCortado por seguridad EpTKzhsCi0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+    server: https://172.31.39.126:6443
+  name: kubernetes
+contexts:
+- context:
+    cluster: kubernetes
+    user: kubernetes-admin
+  name: kubernetes-admin@kubernetes
+current-context: kubernetes-admin@kubernetes
+kind: Config
+preferences: {}
+users:
+- name: kubernetes-admin
+  user:
+    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURJVENDQWdtZ0F3SUJBZ0lJWEprYktya3VxV1l3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TXpBNE1URXdNakF4TlRGYUZ3MHlOREE0TVRBd01qQXhOVFJhTURReApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sa3ESTO LO CORTE POR SEGURIDADRCtKNTJxMkVNQ2dZQnpBTlYwT1Zqb0svNk5JYXZPdG1QcW84OVY5WkJrTlRyL0hQeEIKd1ZvbWtpdk5JZ2ZYNDhPaVE3UEhicFFXNy9SdUM3WkRDTTZPcmpPRnJMU3c3bDZacE94NmNzSFVkWXdaM0NwLwp4RTJsWHF6bnZLcFR2SGJTWlRrUFE2VXBEMjNUR2U5VDE5c2FtcmpCTVc5clBXVXpsR1J3V3lsZ2NoYVRnRUZhCmFnOFFxUUtCZ0NpT2lLRjE4OHdranV4K0t1WjlTYXdmcmg4RWp0VE9wU3d5QkpjUkt3T01ydnpldkVWSmwzNDIKM1Q0Tmh6enZsQW5sMU1ZMFBTU1o1YTYvWThsaTF6NHlBV3NKck5SOW9WbUxKd0p5RW9tZzMramlic1dJd1RKQgpaQm1oK3BrT1NRM3B6WGJRQjNTY2ZKbHFpRHZMT0tBamJWZkpuUEhOcUVENy9aV1k2T011Ci0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg==
